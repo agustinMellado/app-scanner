@@ -12,5 +12,10 @@ import { IonicModule } from '@ionic/angular';
 export class HomePage {
 
   qrCodeString='Mensaje secreto en el QR'
+  scannedResult:any
   constructor() {}
+  startScan(){}
+
+
+
 }
