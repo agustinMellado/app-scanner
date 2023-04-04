@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { QRCodeModule } from 'angularx-qrcode'
 import { IonicModule } from '@ionic/angular';
 
 @Component({
@@ -6,8 +7,10 @@ import { IonicModule } from '@ionic/angular';
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
   standalone: true,
-  imports: [IonicModule],
+  imports: [IonicModule,  QRCodeModule],
 })
 export class HomePage {
+
+  qrCodeString='Mensaje secreto en el QR'
   constructor() {}
 }
